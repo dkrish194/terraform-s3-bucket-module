@@ -15,6 +15,16 @@
 
 No modules.
 
+## Usage
+
+```
+module "s3_bucket" {
+  source       = "git::https://github.com/dkrish194/terraform-s3-bucket-module.git?ref=main"
+  bucket_name  = var.s3_buckets
+  org-name     = var.project
+  enviornement = var.environment
+}
+```
 ## Resources
 
 | Name | Type |
