@@ -11,7 +11,7 @@ variable "project" {
   type = string
 
 }
-variable "enviornement" {
+variable "environment" {
   type    = string
   # default = "dev"
 }

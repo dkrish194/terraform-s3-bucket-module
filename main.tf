@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "bucket" {
   for_each = var.bucket_name
-  bucket   = "${var.org-name}-${var.project}-${var.enviornement}-${each.key}"
+  bucket   = "${var.org-name}-${var.project}-${var.environment}-${each.key}"
   tags = {
     name = "${each.key}"
     # environment = 
