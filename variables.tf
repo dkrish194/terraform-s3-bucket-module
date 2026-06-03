@@ -4,9 +4,14 @@ variable "bucket_name" {
 }
 variable "org-name" {
   type    = string
-  default = "my-company"
+  default = "mycompany"
+}
+
+variable "project" {
+  type = string
+
 }
 variable "enviornement" {
   type    = string
-  default = "dev"
+  # default = "dev"
 }
